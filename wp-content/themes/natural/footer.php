@@ -6,7 +6,7 @@
 				нашим партнером. <br>
 				Зарабатывайте вместе с нами!
 			</p>
-			<button class="btn btn-orange" type="button" name="button">Анкета</button>
+			<a href="/partner/" ><div  class="btn btn-orange">Анкета</div></a>
 		</div>
 		<div class="footer-products">
 			<h3>Наша продукция</h3>
@@ -20,10 +20,10 @@
 		<div class="footer-contacts text-right">
 			<h3>Контакты</h3>
 			<p>
-				Гулжамал  8 747 201 67 59 <br>
-				Алмаз 8 705 218 51 95 <br>
-				г. Экибастуз 8 7187 37 30 40 <br>
-				e-mail: toguzakova54@mail.ru <br>
+				<?php the_field('name1',5); ?>  <?php the_field('phone1',5); ?> <br>
+				<?php the_field('name2',5); ?>  <?php the_field('phone2',5); ?> <br>
+				<?php the_field('name3',5); ?>  <?php the_field('phone3',5); ?> <br>
+				e-mail: <?php the_field('email',5); ?> <br>
 			</p>
 		</div>
 	</div>
@@ -31,7 +31,9 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="<?php bloginfo('template_directory')?>/public/js/main.js"></script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="<?php bloginfo('template_directory'); ?>js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/public/js/bootstrap.min.js"></script>
 </body>
 </html>

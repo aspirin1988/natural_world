@@ -27,10 +27,10 @@
 			<div>
 				<img class="phone-icon" src="<?php bloginfo('template_directory'); ?>/public/images/smartphone-icon.png" alt="Иконка смартфона">
 			</div>
-			<p  class="phonenumbers">87472016759 <br>
-				87052185195</p>
+			<p  class="phonenumbers"><?php the_field('phone1',5); ?><br>
+				<?php the_field('phone2',5); ?></p>
 		</div>
-		<img src="images/logo.png" alt="Лого">
+		<img src="<?php the_field('logo',5); ?>" alt="Лого">
 		<div class="hidden-sm hidden-xs">
 			<img class="anim-clouds clouds-leftgroup" src="<?php bloginfo('template_directory'); ?>/public/images/clouds-leftgroup.png" alt="Облака">
 			<img class="anim-clouds cloud-central" src="<?php bloginfo('template_directory'); ?>/public/images/cloud-central.png" alt="Облако">
@@ -55,10 +55,9 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav text-center">
-					<li class="active"><a href="index.html">Главная <span class="sr-only">(current)</span></a></li>
-					<li><a href="about.html">О Natural World</a></li>
-					<li><a href="products.html">Продукция</a></li>
-					<li><a href="partner.html">Стать партнёром</a></li>
+					<?php $menu=wp_get_nav_menu_items('main'); /*print_r($menu);*/ foreach ($menu as $key=>$val) { if (!$val->menu_item_parent){ $class='';  $title=get_the_title(); if($title==$val->title){$class='active';} ?>
+						<li class="<?php echo $class;?>"><a href="<?=$val->url?>"><?=$val->title?></a></li>
+					<?php }}?>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->

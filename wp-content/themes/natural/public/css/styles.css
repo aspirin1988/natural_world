@@ -34,8 +34,8 @@ ul {
    color: #fb771d;
 }
 
-button.btn-orange,
-button.btn-orange:hover {
+.btn-orange,
+.btn-orange:hover {
   color: white;
   background-color: #fb771d;
   min-width: 200px;

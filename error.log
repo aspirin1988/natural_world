@@ -338,3 +338,99 @@
 [Fri Apr 01 11:18:01.708607 2016] [:error] [pid 6882] [client 127.0.0.1:35799] PHP   6. locate_template() /home/serg/site/antalia_flover/wp-includes/general-template.php:45, referer: http://antalia_flover.test/
 [Fri Apr 01 11:18:01.708611 2016] [:error] [pid 6882] [client 127.0.0.1:35799] PHP   7. load_template() /home/serg/site/antalia_flover/wp-includes/template.php:521, referer: http://antalia_flover.test/
 [Fri Apr 01 11:18:01.708615 2016] [:error] [pid 6882] [client 127.0.0.1:35799] PHP   8. require_once() /home/serg/site/antalia_flover/wp-includes/template.php:562, referer: http://antalia_flover.test/
+[Mon Apr 04 13:12:07.117470 2016] [:error] [pid 6825] [client 127.0.0.1:32892] PHP Fatal error:  Call to undefined function get_post_meta_by_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:12:07.117824 2016] [:error] [pid 6825] [client 127.0.0.1:32892] PHP Stack trace:
+[Mon Apr 04 13:12:07.117864 2016] [:error] [pid 6825] [client 127.0.0.1:32892] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:12:07.117886 2016] [:error] [pid 6825] [client 127.0.0.1:32892] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:12:07.117893 2016] [:error] [pid 6825] [client 127.0.0.1:32892] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:12:07.117899 2016] [:error] [pid 6825] [client 127.0.0.1:32892] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:12:58.589432 2016] [:error] [pid 6736] [client 127.0.0.1:32902] PHP Fatal error:  Call to undefined function get_post_meta_by_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:12:58.589460 2016] [:error] [pid 6736] [client 127.0.0.1:32902] PHP Stack trace:
+[Mon Apr 04 13:12:58.589468 2016] [:error] [pid 6736] [client 127.0.0.1:32902] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:12:58.589472 2016] [:error] [pid 6736] [client 127.0.0.1:32902] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:12:58.589476 2016] [:error] [pid 6736] [client 127.0.0.1:32902] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:12:58.589492 2016] [:error] [pid 6736] [client 127.0.0.1:32902] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:13:03.029840 2016] [:error] [pid 7044] [client 127.0.0.1:32904] PHP Fatal error:  Call to undefined function get_post_meta_by_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:13:03.029879 2016] [:error] [pid 7044] [client 127.0.0.1:32904] PHP Stack trace:
+[Mon Apr 04 13:13:03.029887 2016] [:error] [pid 7044] [client 127.0.0.1:32904] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:13:03.029892 2016] [:error] [pid 7044] [client 127.0.0.1:32904] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:13:03.029896 2016] [:error] [pid 7044] [client 127.0.0.1:32904] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:13:03.029900 2016] [:error] [pid 7044] [client 127.0.0.1:32904] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:13:06.486894 2016] [:error] [pid 6789] [client 127.0.0.1:32905] PHP Fatal error:  Call to undefined function get_post_meta_by_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:13:06.486928 2016] [:error] [pid 6789] [client 127.0.0.1:32905] PHP Stack trace:
+[Mon Apr 04 13:13:06.486951 2016] [:error] [pid 6789] [client 127.0.0.1:32905] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:13:06.486960 2016] [:error] [pid 6789] [client 127.0.0.1:32905] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:13:06.486967 2016] [:error] [pid 6789] [client 127.0.0.1:32905] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:13:06.486972 2016] [:error] [pid 6789] [client 127.0.0.1:32905] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:13:49.557092 2016] [:error] [pid 7052] [client 127.0.0.1:32919] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:13:49.557124 2016] [:error] [pid 7052] [client 127.0.0.1:32919] PHP Stack trace:
+[Mon Apr 04 13:13:49.557150 2016] [:error] [pid 7052] [client 127.0.0.1:32919] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:13:49.557155 2016] [:error] [pid 7052] [client 127.0.0.1:32919] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:13:49.557159 2016] [:error] [pid 7052] [client 127.0.0.1:32919] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:13:49.557163 2016] [:error] [pid 7052] [client 127.0.0.1:32919] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:13:50.600709 2016] [:error] [pid 7002] [client 127.0.0.1:32920] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:13:50.600746 2016] [:error] [pid 7002] [client 127.0.0.1:32920] PHP Stack trace:
+[Mon Apr 04 13:13:50.600756 2016] [:error] [pid 7002] [client 127.0.0.1:32920] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:13:50.600762 2016] [:error] [pid 7002] [client 127.0.0.1:32920] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:13:50.600768 2016] [:error] [pid 7002] [client 127.0.0.1:32920] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:13:50.600785 2016] [:error] [pid 7002] [client 127.0.0.1:32920] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:13:51.144612 2016] [:error] [pid 6736] [client 127.0.0.1:32921] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:13:51.144645 2016] [:error] [pid 6736] [client 127.0.0.1:32921] PHP Stack trace:
+[Mon Apr 04 13:13:51.144652 2016] [:error] [pid 6736] [client 127.0.0.1:32921] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:13:51.144668 2016] [:error] [pid 6736] [client 127.0.0.1:32921] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:13:51.144672 2016] [:error] [pid 6736] [client 127.0.0.1:32921] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:13:51.144676 2016] [:error] [pid 6736] [client 127.0.0.1:32921] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:13:51.338425 2016] [:error] [pid 7044] [client 127.0.0.1:32922] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:13:51.338459 2016] [:error] [pid 7044] [client 127.0.0.1:32922] PHP Stack trace:
+[Mon Apr 04 13:13:51.338466 2016] [:error] [pid 7044] [client 127.0.0.1:32922] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:13:51.338483 2016] [:error] [pid 7044] [client 127.0.0.1:32922] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:13:51.338487 2016] [:error] [pid 7044] [client 127.0.0.1:32922] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:13:51.338490 2016] [:error] [pid 7044] [client 127.0.0.1:32922] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:13:51.548177 2016] [:error] [pid 6789] [client 127.0.0.1:32923] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:13:51.548212 2016] [:error] [pid 6789] [client 127.0.0.1:32923] PHP Stack trace:
+[Mon Apr 04 13:13:51.548222 2016] [:error] [pid 6789] [client 127.0.0.1:32923] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:13:51.548228 2016] [:error] [pid 6789] [client 127.0.0.1:32923] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:13:51.548234 2016] [:error] [pid 6789] [client 127.0.0.1:32923] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:13:51.548252 2016] [:error] [pid 6789] [client 127.0.0.1:32923] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:13:51.710524 2016] [:error] [pid 6713] [client 127.0.0.1:32924] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 29
+[Mon Apr 04 13:13:51.710562 2016] [:error] [pid 6713] [client 127.0.0.1:32924] PHP Stack trace:
+[Mon Apr 04 13:13:51.710570 2016] [:error] [pid 6713] [client 127.0.0.1:32924] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:13:51.710587 2016] [:error] [pid 6713] [client 127.0.0.1:32924] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:13:51.710591 2016] [:error] [pid 6713] [client 127.0.0.1:32924] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:13:51.710594 2016] [:error] [pid 6713] [client 127.0.0.1:32924] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:14:19.012130 2016] [:error] [pid 7305] [client 127.0.0.1:32935] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 30
+[Mon Apr 04 13:14:19.012165 2016] [:error] [pid 7305] [client 127.0.0.1:32935] PHP Stack trace:
+[Mon Apr 04 13:14:19.012173 2016] [:error] [pid 7305] [client 127.0.0.1:32935] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:14:19.012190 2016] [:error] [pid 7305] [client 127.0.0.1:32935] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:14:19.012194 2016] [:error] [pid 7305] [client 127.0.0.1:32935] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:14:19.012197 2016] [:error] [pid 7305] [client 127.0.0.1:32935] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:14:58.918785 2016] [:error] [pid 7002] [client 127.0.0.1:32939] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 31
+[Mon Apr 04 13:14:58.918807 2016] [:error] [pid 7002] [client 127.0.0.1:32939] PHP Stack trace:
+[Mon Apr 04 13:14:58.918814 2016] [:error] [pid 7002] [client 127.0.0.1:32939] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:14:58.918831 2016] [:error] [pid 7002] [client 127.0.0.1:32939] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:14:58.918835 2016] [:error] [pid 7002] [client 127.0.0.1:32939] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:14:58.918839 2016] [:error] [pid 7002] [client 127.0.0.1:32939] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:15:01.026377 2016] [:error] [pid 6736] [client 127.0.0.1:32942] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 31
+[Mon Apr 04 13:15:01.026409 2016] [:error] [pid 6736] [client 127.0.0.1:32942] PHP Stack trace:
+[Mon Apr 04 13:15:01.026429 2016] [:error] [pid 6736] [client 127.0.0.1:32942] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:15:01.026434 2016] [:error] [pid 6736] [client 127.0.0.1:32942] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:15:01.026439 2016] [:error] [pid 6736] [client 127.0.0.1:32942] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:15:01.026442 2016] [:error] [pid 6736] [client 127.0.0.1:32942] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:15:03.824822 2016] [:error] [pid 7044] [client 127.0.0.1:32944] PHP Fatal error:  Call to undefined function get_post_id() in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 31
+[Mon Apr 04 13:15:03.824864 2016] [:error] [pid 7044] [client 127.0.0.1:32944] PHP Stack trace:
+[Mon Apr 04 13:15:03.824872 2016] [:error] [pid 7044] [client 127.0.0.1:32944] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:15:03.824884 2016] [:error] [pid 7044] [client 127.0.0.1:32944] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:15:03.824888 2016] [:error] [pid 7044] [client 127.0.0.1:32944] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:15:03.824892 2016] [:error] [pid 7044] [client 127.0.0.1:32944] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:30:47.173547 2016] [:error] [pid 6825] [client 127.0.0.1:33482] PHP Fatal error:  Cannot use object of type WP_Post as array in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 18
+[Mon Apr 04 13:30:47.173587 2016] [:error] [pid 6825] [client 127.0.0.1:33482] PHP Stack trace:
+[Mon Apr 04 13:30:47.173602 2016] [:error] [pid 6825] [client 127.0.0.1:33482] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:30:47.173611 2016] [:error] [pid 6825] [client 127.0.0.1:33482] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:30:47.173617 2016] [:error] [pid 6825] [client 127.0.0.1:33482] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:30:47.173624 2016] [:error] [pid 6825] [client 127.0.0.1:33482] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
+[Mon Apr 04 13:30:49.145292 2016] [:error] [pid 7044] [client 127.0.0.1:33483] PHP Fatal error:  Cannot use object of type WP_Post as array in /home/serg/site/natural_world/wp-content/themes/natural/page-getproducts.php on line 18
+[Mon Apr 04 13:30:49.145338 2016] [:error] [pid 7044] [client 127.0.0.1:33483] PHP Stack trace:
+[Mon Apr 04 13:30:49.145347 2016] [:error] [pid 7044] [client 127.0.0.1:33483] PHP   1. {main}() /home/serg/site/natural_world/index.php:0
+[Mon Apr 04 13:30:49.145352 2016] [:error] [pid 7044] [client 127.0.0.1:33483] PHP   2. require() /home/serg/site/natural_world/index.php:17
+[Mon Apr 04 13:30:49.145356 2016] [:error] [pid 7044] [client 127.0.0.1:33483] PHP   3. require_once() /home/serg/site/natural_world/wp-blog-header.php:16
+[Mon Apr 04 13:30:49.145360 2016] [:error] [pid 7044] [client 127.0.0.1:33483] PHP   4. include() /home/serg/site/natural_world/wp-includes/template-loader.php:89
