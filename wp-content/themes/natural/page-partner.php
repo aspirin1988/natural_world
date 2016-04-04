@@ -19,24 +19,24 @@ get_header(); ?>
 		<form id="mail" action="" method="post">
 			<h3 class="orange-text">Заполните анкету</h3>
 			<div class="form-group">
-				<label for="fullname">Ф.И.О.</label>
-				<input type="text" class="form-control" id="fullname" placeholder="Ф.И.О.">
+				<label for="Ф.И.О.">Ф.И.О.</label>
+				<input type="text" class="form-control" id="Ф.И.О." placeholder="Ф.И.О.">
 			</div>
 			<div class="form-group">
-				<label for="phoneNumber">Телефон</label>
-				<input type="text" class="form-control" id="phoneNumber" placeholder="Телефон">
+				<label for="Телефон">Телефон</label>
+				<input type="text" class="form-control" id="Телефон" placeholder="Телефон">
 			</div>
 			<div class="form-group">
-				<label for="email">Email</label>
-				<input type="email" class="form-control" id="email" placeholder="Email">
+				<label for="Email">Email</label>
+				<input type="email" class="form-control" id="Email" placeholder="Email">
 			</div>
 			<div class="form-group">
-				<label for="birthDate">Дата рождения</label>
-				<input type="date" class="form-control" id="birthDate" placeholder="Дата рождения">
+				<label for="Дата рождения">Дата рождения</label>
+				<input type="date" class="form-control" id="Дата рождения" placeholder="Дата рождения">
 			</div>
 			<div class="form-group">
-				<label for="city">Город:</label>
-				<select class="form-control" id="city">
+				<label for="Город">Город:</label>
+				<select class="form-control" id="Город">
 					<option value="Алматы">Алматы</option>
 					<option value="Талдыкорган">Талдыкорган</option>
 					<option value="Шымкент">Шымкент</option>
@@ -48,6 +48,7 @@ get_header(); ?>
 					<input id="delivery" type="checkbox"> Получать уведомления
 				</label>
 			</div>-->
+			<input type="text" class="hide" name="title" id="title" value="Анкета" >
 			<div id="submit" class="btn btn-orange">Отправить</div>
 		</form>
 		<div class="textbox">

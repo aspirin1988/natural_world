@@ -25,7 +25,6 @@ $(document).ready(function(){
         var input=f.find('input');
         var select=f.find('select');
         var data={};
-        data['title']='Анкета';
         $.each(input,function(key,val){
             data[$(val).attr('id')]=$(val).val();
         });
@@ -38,7 +37,12 @@ $(document).ready(function(){
             data:data,
             method:"POST"
         }).done(function(data) {
-           $('#mail').html('<h3 class="orange-text">Анкета успешно отправлена</h3><div class="form-group"><p>'+data[0].text+'</p></div>');
+            if(data[0].code) {
+                $('#mail').html('<h3 class="orange-text">Анкета успешно отправлена</h3><div class="form-group"><p>' + data[0].text + '</p></div>');
+            }else
+            {
+                $('#mail').html('<h3 class="orange-text">Ошибка отправки анкеты</h3><div class="form-group"><p>' + data[0].text + '</p></div>');
+            }
         });
 
     });
