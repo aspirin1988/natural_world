@@ -1,0 +1,704 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: #b3cfa8;
+    background-image: url(../images/gradient-top.png),
+                      url(../images/background-plants.png),
+                      url(../images/gradient-bottom.png);
+    background-position:  top center,
+                          center 300px,
+                          bottom center;
+    background-size:  100%,
+                      auto,
+                      100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.darkgreen-text {
+  color: #07410c;
+}
+
+.darkblue-text {
+  color: #03657b;
+}
+
+.orange-text {
+   color: #fb771d;
+}
+
+button.btn-orange,
+button.btn-orange:hover {
+  color: white;
+  background-color: #fb771d;
+  min-width: 200px;
+}
+/* конец ОБЩИЕ СТИЛИ  */
+
+/* ШАПКА */
+@media (min-width: 768px) {
+  header {
+    padding-bottom: 50px;
+  }
+
+  img.anim-clouds {
+    position: absolute;
+  }
+
+  .clouds-leftgroup    {
+    top: 25px;
+    left: 140px;
+    z-index: -1;
+    animation-name: leftgroupanim;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+  .cloud-central {
+    top: 0;
+    right: 400px;
+    z-index: -4;
+    animation-name: centralcloudanim;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+  }
+
+  .clouds-rightgroup {
+    right: 160px;
+    top: 35px;
+    z-index: -1;
+    animation-name: rightgroupanim;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+  .shine {
+    top: -470px;
+    right: 55px;
+    z-index: -2;
+    animation-name: shinerotation;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+
+  @keyframes leftgroupanim {
+    from {
+      top: 25px;
+      left: 140px;
+    }
+    50% {
+      top: 20px;
+      left: 80px;
+    }
+    from {
+      top: 25px;
+      left: 140px;
+    }
+  }
+
+  @keyframes centralcloudanim {
+    from {
+      top: 0;
+      right: 400px;
+    }
+    25% {
+      top: 0;
+      right: 450px;
+    }
+    50% {
+      top: 0;
+      right: 350px;
+    }
+    from {
+      top: 0;
+      right: 400px;
+    }
+  }
+  @keyframes rightgroupanim {
+    from {
+      right: 160px;
+      top: 35px;
+    }
+    50% {
+      right: 100px;
+      top: 30px;
+    }
+    from {
+      right: 160px;
+      top: 35px;
+    }
+  }
+
+  @keyframes shinerotation {
+    from {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    from {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.upperrow {
+  padding: 25px 0;
+  position: relative;
+}
+
+.upperrow .darkgreen-text {
+  font-family: georgia, serif;
+  text-shadow:  0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+                0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff,
+                0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
+}
+
+.upperrow .phone-section {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .upperrow .phone-section {
+    margin-top: -35px;
+  }
+}
+
+.upperrow img.phone-icon {
+ margin-right: 10px;
+}
+
+.upperrow .phonenumbers {
+  color: #F7C724;
+  margin: 0;
+}
+
+/* конец ШАПКА */
+
+/* НАВБАР */
+.navbar-default .navbar-nav>li>a { /*перебиваем стили бутстрапа*/
+  color: #07410c;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus { /*перебиваем стили бутстрапа*/
+  color: #07410c;
+  background-color: rgba(0, 0, 0, 0.0);
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #287e30;
+  text-shadow:  0 0 .5px #fff,
+                0 0 .5px #fff;
+}
+
+.navbar-default { /*перебиваем стили бутстрапа*/
+    background-color: initial;
+    border: none;
+}
+
+ul.navbar-nav {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+
+@media (min-width: 768px) {/* центрируем линки навбара, перебивая стили бутстрапа */
+    ul.navbar-nav {
+        float: none;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .navbar-nav li {
+        float: none;
+        flex: 1 1 auto;
+    }
+}
+@media (min-width: 1200px) {
+  .navbar-default .container {
+      width: 900px;
+  }
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form,
+.navbar-default .navbar-toggle { /* перебиваем bs-стили для кноки меню */
+  border-color: #71a276;
+}
+.navbar-default .navbar-toggle .icon-bar { /* перебиваем bs-стили для кноки меню */
+  background-color: #71a276;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover { /* перебиваем bs-стили для кноки меню */
+  background-color: #b3cfa8;
+}
+/* конец НАВБАР */
+
+
+/* ФУТЕР */
+footer {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  background: url(../images/logo-green.png) no-repeat center center;
+}
+
+footer a,
+footer a:focus,
+footer a:visited {
+  color: #07410c;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #021403;
+}
+
+footer > .container {
+  display: flex;
+}
+
+footer > .container > div {
+  flex: 0 1 270px;
+}
+
+footer div.footer-contacts {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 18px;
+  }
+
+  footer p,
+  footer a {
+   font-size: 12px;
+ }
+
+  footer button.btn-orange {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 530px) {
+
+  footer > .container {
+    text-align: center;
+    flex-flow: column wrap;
+  }
+
+  footer div.footer-contacts {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  footer > .container > div {
+    flex: 1 1 140px;
+  }
+
+  footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+/* конец ФУТЕР */
+
+/* -------------------------
+      -------------------
+      СТРАНИЦЫ САЙТА НИЖЕ:
+      -----------------
+ -------------------------  */
+
+ /* -------------------------
+       ГЛАВНАЯ страница:
+  -------------------------  */
+
+/* НЕМНОГО О */
+.brief-summary {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.brief-summary .rectangle p {
+  text-indent: 20px;
+}
+
+.brief-summary .rectangle {
+  padding: 10px 20px;
+  background-image: url(../images/brief-summary-background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.brief-summary h2 > span {
+  font-family: 'Rochester', cursive;
+  font-size: 40px;
+}
+
+@media (min-width: 992px) {
+  .brief-summary .tree {
+    margin-top: -150px;
+  }
+}
+
+.brief-summary button {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+/* конец НЕМНОГО О */
+
+/* ПРОДУКТЫ */
+.background-products {
+  background-color: white;
+  background-image: url(../images/background-blue.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+}
+
+.products h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 3% 2%;
+  text-transform: uppercase;
+  background-color: #cbddca;
+}
+
+.products img {
+  margin-top: 5%;
+}
+
+.product-names {
+  margin-top: -3%;
+  display: flex;
+}
+
+.product-names p {
+  text-align: center;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .products h2 {
+    font-size: 18px;
+  }
+  .product-names p {
+    font-size: 12px;
+  }
+}
+.product-names p:nth-of-type(2) {
+  margin-top: 4%;
+}
+/* конец ПРОДУКТЫ */
+
+
+/* КРИОЗАМОРОЗКА */
+.background-criofreeze {
+  background-color: white;
+}
+
+.background-criofreeze div.container {
+  padding-top: 4%;
+  position: relative;
+}
+
+.background-criofreeze p {
+  text-transform: uppercase;
+  font-size: 32px;
+  position: absolute;
+  right: 0;
+}
+
+.background-criofreeze p span {
+  font-weight: bold;
+  font-size: 64px;
+}
+
+@media (max-width: 992px) {
+  .background-criofreeze p {
+    font-size: 16px;
+  }
+
+  .background-criofreeze p span {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-criofreeze p {
+    position: static;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .background-criofreeze p span {
+    font-size: 18px;
+  }
+}
+.criofreeze {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 480px) {
+  .criofreeze {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .criofreeze > div:nth-of-type(1) {
+    flex: 2 1 200px;
+  }
+
+  .criofreeze > div:nth-of-type(2) {
+    flex: 1 1 100px;
+  }
+}
+/* конец КРИОЗАМОРОЗКА */
+
+/* -------------------------
+      конец страницы  ГЛАВНАЯ
+ -------------------------  */
+
+ /* -------------------------
+      СТАТЬ ПАРТНЁРОМ страница:
+  -------------------------  */
+
+
+/* АНКЕТА */
+.questionnaire {
+  background-image: url(../images/background-blue.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+}
+
+.questionnaire form {
+  padding: 5px 20px 20px;
+  background-color: white;
+}
+
+.questionnaire form label {
+  font: normal 16px 'Open Sans', sans-serif;
+  color: #768082;
+}
+.questionnaire form button {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.questionnaire .textbox {
+  margin-top: 20px;
+  border: 3px solid #fb771d;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .questionnaire {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .questionnaire form {
+    width: 100%
+  }
+
+  .questionnaire .textbox {
+    padding: 10px;
+    flex: 1;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .questionnaire  {
+    padding: 60px 0;
+  }
+
+  .questionnaire form {
+    min-width: 300px;
+    border-radius: 5px;
+    margin-left: auto;
+  }
+
+  .questionnaire .textbox {
+    padding: 20px 20px;
+    max-width: 40%;
+    margin-left: auto;
+  }
+}
+/* конец АНКЕТА */
+
+/* ПРИЕМУЩЕСТВА */
+.advantages {
+  background-color: #b3cfa8;
+  padding-bottom: 20px;
+}
+
+.advantages p {
+  text-indent: 30px;
+}
+/* конец ПРИЕМУЩЕСТВА */
+
+/* ПОЧУВСТВУЙ СВОБОДУ  */
+.background-freedom {
+  color: white;
+  background-image: url(../images/roses.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.background-freedom .textbox {
+  background-color: rgba(84, 0, 0, 0.74);
+  padding: 20px;
+}
+
+.background-freedom p {
+font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .background-freedom h2 {
+    font-size: 40px;
+  }
+
+  .background-freedom .textbox {
+    margin: 15% auto;
+    max-width: 580px;
+    padding: 50px;
+  }
+}
+/* конец ПОЧУВСТВУЙ СВОБОДУ  */
+
+
+/* -------------------------
+конец страницы СТАТЬ ПАРТНЁРОМ
+-------------------------  */
+
+
+
+/* -------------------------
+    ПРОДУКЦИЯ страница:
+-------------------------  */
+
+/*  ПОЧУВСТВУЙ СВОБОДУ  */
+
+/*  ЩИТ И КАРТИНКА  */
+
+.product-filter .shield {
+  color: white;
+  padding: 25px;
+}
+
+.product-filter .shield h2 {
+  font: italic bold 36px 'Open Sans', sans-serif;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.product-filter .shield li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.product-filter .shield li:first-of-type {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@media (min-width: 992px) {
+  .product-filter .picture {
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 130px;
+    border: 3px solid #007cdf;
+  }
+
+  .product-filter .shield {
+    min-height: 380px;
+    width: 260px;
+    position: absolute;
+    background-image: url(../images/shield.png);
+    background-size: 100% 100%;
+    top: -3px;
+    bottom: -3px;
+    left: -130px;
+  }
+}
+/*  конец ЩИТ И КАРТИНКА  */
+
+/*  PRODUCT UNITS  */
+.product-units {
+  margin-top: 30px;
+}
+
+.product-units .flexrow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-family: Arial, sans-serif;
+}
+
+.product-units .flexrow .item {
+  background: linear-gradient(to bottom, #ffffff 0%,#ffffff 80%,#f9f9f9 85%,#e8e8e8 94%,#e1e1e1 100%);
+  margin: 10px 5px;
+  flex: 0 0 250px;
+  border-radius: 5px;
+}
+
+.product-units .img-rounded {
+  width: 100%;
+}
+
+.product-units .item .img-containter {
+  padding: 5px;
+}
+
+.product-units .item .item-name {
+  padding: 15px;
+}
+
+.product-units .item .item-name h3 {
+  margin-top: 0;
+}
+/*  конец PRODUCT UNITS  */
+
+/*  МОДАЛЬНОЕ ОКНО  */
+.modal .img-rounded {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.modal p {
+  text-align: justify;
+  padding: 0 10px;
+  text-indent: 30px;
+}
+/*  конецМОДАЛЬНОЕ ОКНО  */
+
+
+/* -------------------------
+конец страницы  ПРОДУКЦИЯ:
+-------------------------  */
