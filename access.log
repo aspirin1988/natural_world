@@ -7282,3 +7282,5 @@
 127.0.0.1 - - [04/Apr/2016:18:14:14 +0600] "GET /about/ HTTP/1.1" 500 549 "http://naturalworld.blink.kz/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36"
 127.0.0.1 - - [04/Apr/2016:18:14:16 +0600] "POST /wp-admin/admin-ajax.php HTTP/1.1" 200 204 "http://natural_world.test/wp-admin/nav-menus.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36"
 127.0.0.1 - - [04/Apr/2016:18:16:17 +0600] "POST /wp-admin/admin-ajax.php HTTP/1.1" 200 204 "http://natural_world.test/wp-admin/nav-menus.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36"
+127.0.0.1 - - [05/Apr/2016:09:19:16 +0600] "GET / HTTP/1.1" 500 549 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36"
+127.0.0.1 - - [05/Apr/2016:09:19:17 +0600] "GET /favicon.ico HTTP/1.1" 200 203 "http://natural_world.test/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36"

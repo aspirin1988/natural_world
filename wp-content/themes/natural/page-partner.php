@@ -16,7 +16,7 @@ get_header(); ?>
 
 	<!-- АНКЕТА -->
 	<div class="container questionnaire">
-		<form id="mail" action="" method="post">
+		<form id="mail" >
 			<h3 class="orange-text">Заполните анкету</h3>
 			<div class="form-group">
 				<label for="Ф.И.О.">Ф.И.О.</label>
@@ -49,7 +49,7 @@ get_header(); ?>
 				</label>
 			</div>-->
 			<input type="text" class="hide" name="title" id="title" value="Анкета" >
-			<div id="submit" class="btn btn-orange">Отправить</div>
+			<input type="submit" value="Отправить" class="btn btn-orange">
 		</form>
 		<div class="textbox">
 			<h2 class="text-center text-uppercase"><?php the_field('phone1'); ?></h2>

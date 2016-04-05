@@ -16,24 +16,38 @@ $(document).ready(function(){
             $('.modal-content-text').html(data.post_content);
             //$( this ).addClass( "done" );
             $('#myModal').modal();
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                var ifreams = document.getElementsByTagName('iframe');
+                for(var i=0; i<ifreams.length; i++) {
+                    ifreams[i].style.display = 'none';
+                }
+            }
+
+
         });
 
     });
 
-    $('#submit').click(function(){
-        var f=$('#mail');
-        var input=f.find('input');
-        var select=f.find('select');
-        var data={};
-        $.each(input,function(key,val){
-            data[$(val).attr('id')]=$(val).val();
-        });
-        $.each(select,function(key,val){
-            data[$(val).attr('id')]=$(val).val();
-        });
 
+
+
+    $('.scroll-to').click(function() {
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+
+        return false;
+    });
+
+    $('#mail').submit(function(e){
+        e.preventDefault();
+
+        var fields = e.target;
+        var data = {};
+        for(var i=0; i<fields.length - 1; i++) {
+            data[fields[i].id] = fields[i].value;
+        }
         $.ajax({
-            url: "http://callback.blink.kz/client/Callback/SendForm",
+            url: "https://callback.blink.kz/client/Callback/SendForm",
             data:data,
             method:"POST"
         }).done(function(data) {
@@ -44,7 +58,7 @@ $(document).ready(function(){
                 $('#mail').html('<h3 class="orange-text">Ошибка отправки анкеты</h3><div class="form-group"><p>' + data[0].text + '</p></div>');
             }
         });
-
     });
+
 });
 
