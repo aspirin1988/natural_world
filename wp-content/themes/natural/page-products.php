@@ -28,7 +28,7 @@ $args = array(
 	'type'         => 'post',
 	'child_of'     => 4,
 	'parent'       => '',
-	'orderby'      => 'name',
+	'orderby'      => 'ID',
 	'order'        => 'ASC',
 	'hide_empty'   => 1,
 	'hierarchical' => 1,
@@ -46,7 +46,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="product-filter">
 			<div class="picture">
-				<div class="shield">
+				<div class="shield" id="shield">
 					<h2 class="text-center">Наша продукция</h2>
 					<ul>
 						<?php foreach($categories as $val){ ?>
@@ -71,6 +71,7 @@ get_header(); ?>
 			foreach ($lastposts as $post) {
 				setup_postdata($post);
 				?>
+
 				<div class="item">
 					<div class="img-containter">
 						<img class="img-rounded" src="<?php the_post_thumbnail_url('medium'); ?>"
@@ -145,6 +146,6 @@ get_header(); ?>
 		</div>
 	</div>
 	<!-- End Modal -->
-
+<div class="top-btn" ><a class="scroll-to" href="#shield">^</a></div>
 <?php
 get_footer();

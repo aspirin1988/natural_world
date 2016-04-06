@@ -33,12 +33,14 @@ get_header(); ?>
 		<div class="container">
 			<div class="products">
 				<h2>Продукция</h2>
+				<a href="/products/" >
 				<img class="img-responsive" src="<?php the_field('products1'); ?>" alt="Продукты">
 				<div class="product-names darkblue-text">
 					<p>Новинки компании</p>
 					<p>Косметика</p>
 					<p>Оздоровление и питание</p>
 				</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -47,7 +49,7 @@ get_header(); ?>
 	<!-- КРИОЗАМОРОЗКА -->
 	<div class="background-criofreeze">
 		<div class="container">
-			<p class="darkblue-text">Вся наша продукция<br> прозводится из трав,
+			<p class="darkblue-text">Вся наша продукция<br> производится из трав,
 				прошедших<br><span>Криозаморозку</span>
 			</p>
 			<div class="criofreeze">

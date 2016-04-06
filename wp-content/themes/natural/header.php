@@ -27,8 +27,8 @@
 			<div>
 				<img class="phone-icon" src="<?php bloginfo('template_directory'); ?>/public/images/smartphone-icon.png" alt="Иконка смартфона">
 			</div>
-			<p  class="phonenumbers"><?php the_field('phone1',5); ?><br>
-				<?php the_field('phone2',5); ?></p>
+			<p  class="phonenumbers"><a href="tel:<?php the_field('phone1',5); ?>"><?php the_field('phone1',5); ?></a> <br>
+				<a href="tel:<?php the_field('phone2',5); ?>"><?php the_field('phone2',5); ?></a></p>
 		</div>
 		<img src="<?php the_field('logo',5); ?>" alt="Лого">
 		<div class="hidden-sm hidden-xs">

@@ -33,7 +33,7 @@ get_header(); ?>
 	<!-- КРИОЗАМОРОЗКА -->
 	<div class="background-criofreeze">
 		<div class="container">
-			<p class="darkblue-text">Вся наша продукция<br> прозводится из трав,
+			<p class="darkblue-text">Вся наша продукция<br> производится из трав,
 				прошедших<br><span>Криозаморозку</span>
 			</p>
 			<div class="criofreeze">

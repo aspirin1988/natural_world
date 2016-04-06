@@ -1,3 +1,21 @@
+<?php
+$args = array(
+	'type'         => 'post',
+	'child_of'     => 4,
+	'parent'       => '',
+	'orderby'      => 'ID',
+	'order'        => 'ASC',
+	'hide_empty'   => 1,
+	'hierarchical' => 1,
+	'exclude'      => '',
+	'include'      => '',
+	'number'       => 0,
+	'taxonomy'     => 'category',
+	'pad_counts'   => false,
+	// полный список параметров смотрите в описании функции http://wp-kama.ru/function/get_terms
+);
+$categories = get_categories( $args );
+?>
 <footer class="darkgreen-text">
 	<div class="container">
 		<div class="footer-partner">
@@ -11,19 +29,18 @@
 		<div class="footer-products">
 			<h3>Наша продукция</h3>
 			<ul>
-				<li><a href="#">Новинки компании</a></li>
-				<li><a href="#">Оздоровление и питание</a></li>
-				<li><a href="#">Косметика</a></li>
-				<li><a href="#">Продукты ежедневного использования</a></li>
+				<?php foreach($categories as $val){ ?>
+					<li><a class="scroll-to" href="/products/#<?=$val->slug?>"><?=$val->name?></a></li>
+				<?php } ?>
 			</ul>
 		</div>
 		<div class="footer-contacts text-right">
 			<h3>Контакты</h3>
 			<p>
-				<?php the_field('name1',5); ?>  <?php the_field('phone1',5); ?> <br>
-				<?php the_field('name2',5); ?>  <?php the_field('phone2',5); ?> <br>
-				<?php the_field('name3',5); ?>  <?php the_field('phone3',5); ?> <br>
-				e-mail: <?php the_field('email',5); ?> <br>
+				<?php the_field('name1',5); ?>  <a href="tel:<?php the_field('phone1',5); ?>"><?php the_field('phone1',5); ?></a> <br>
+				<?php the_field('name2',5); ?>  <a href="tel:<?php the_field('phone2',5); ?>"><?php the_field('phone2',5); ?></a> <br>
+				<?php the_field('name3',5); ?>  <a href="tel:<?php the_field('phone3',5); ?>"><?php the_field('phone3',5); ?></a> <br>
+				e-mail: <a href="mailto:<?php the_field('email',5); ?>"><?php the_field('email',5); ?></a> <br>
 			</p>
 		</div>
 	</div>

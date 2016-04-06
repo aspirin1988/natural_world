@@ -60,5 +60,18 @@ $(document).ready(function(){
         });
     });
 
+
+        $(document).scroll(function(){
+            console.log();
+            if ($(document).scrollTop()>=$('.hr')[0].offsetTop)
+            {
+               $('.top-btn').show();
+            }
+            else {
+                $('.top-btn').hide();
+            }
+        });
+
+
 });
 

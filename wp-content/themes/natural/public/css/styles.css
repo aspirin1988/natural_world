@@ -708,6 +708,58 @@ font-size: 24px;
   font-size: 32px;
 }
 
+div.shield a{
+  padding: 2px;
+  color:white;
+  text-decoration:blink;
+}
+
+.img-overflow > img {
+  width:100%;
+}
+
+.item {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+div.shield li{
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  transition: background-color 1s;
+}
+div.shield li:hover{
+  background-color: rgba(255,255,255,.3);
+}
+
+.top-btn {
+  position: fixed;
+  top: 50%;
+  min-height: 64px;
+  min-width: 64px;
+  background-color: rgba(108, 165, 170, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  padding: 15px;
+  left: 5px;
+  margin-top: -32px;
+
+}
+
+.top-btn:hover{
+  border: solid 1px #ffffff;
+}
+
+
+.top-btn a{
+ font-size: 24px;
+ font-weight: bold;
+  color: white;
+  text-decoration:blink;
+}
+
 /* -------------------------
 конец страницы  ПРОДУКЦИЯ:
 -------------------------  */
