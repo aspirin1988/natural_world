@@ -745,19 +745,21 @@ div.shield li:hover{
   padding: 15px;
   left: 5px;
   margin-top: -32px;
-
+  display: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration:blink;
 }
 
 .top-btn:hover{
   border: solid 1px #ffffff;
+
 }
 
 
 .top-btn a{
- font-size: 24px;
- font-weight: bold;
-  color: white;
-  text-decoration:blink;
+
 }
 
 /* -------------------------

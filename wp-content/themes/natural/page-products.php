@@ -133,7 +133,7 @@ get_header(); ?>
 					<h4 class="modal-title">Название товара</h4>
 				</div>
 				<div class="modal-body">
-					<img class="img-rounded modal-image" src="images/item_pic.jpg" alt="Картинка продукта">
+					<img class="img-rounded modal-image" src="<?php bloginfo('template_directory'); ?>/public/images/item_pic.jpg" alt="Картинка продукта">
 					<p class="modal-content-text" >Описательное описание товара о том какой этот товар крутой, полезный, единственный и так далее. А так же куча слов о том, что с вами будет, если вы его не приобретёте. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quis error temporibus repudiandae hic quia asperiores totam natus, quae ipsum dolor reprehenderit veritatis quos aspernatur repellendus labore reiciendis eos ullam aperiam iste repellat, impedit doloremque et aliquam. Iste ipsa, praesentium magni ducimus id eius totam, libero quis rem incidunt, temporibus.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, dicta.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente error nobis sit ullam. Eum cumque, soluta nulla. Obcaecati, ut, quia. Deleniti voluptatum nisi minima quisquam! Quisquam officiis quasi at qui quod quam eveniet ab impedit cumque hic dicta recusandae, ut ea facere possimus obcaecati voluptatem delectus, dolores corrupti quos tempora soluta. Quaerat dolorem, ab in facilis est sapiente, culpa nobis delectus atque velit ducimus iure veniam temporibus ipsum! Eos adipisci dolorem magni vitae fuga magnam illum alias dolorum provident inventore odit, assumenda animi expedita odio exercitationem ratione officiis quod consequatur, voluptatum, ab recusandae repellendus harum. Nulla totam temporibus sapiente perferendis.</p>
@@ -146,6 +146,6 @@ get_header(); ?>
 		</div>
 	</div>
 	<!-- End Modal -->
-<div class="top-btn" ><a class="scroll-to" href="#shield">^</a></div>
+	<a class="scroll-to" href="#shield"><div class="top-btn" >^</div></a>
 <?php
 get_footer();
