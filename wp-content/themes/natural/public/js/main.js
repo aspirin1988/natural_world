@@ -32,11 +32,7 @@ $(document).ready(function(){
 
 
 
-    $('.scroll-to').click(function() {
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 
-        return false;
-    });
 
     $('#mail').submit(function(e){
         e.preventDefault();
@@ -60,6 +56,11 @@ $(document).ready(function(){
         });
     });
 
+    $('.scroll-to').click(function() {
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+
+        return false;
+    });
 
         $(document).scroll(function(){
             console.log();
