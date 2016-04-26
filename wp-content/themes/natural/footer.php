@@ -49,8 +49,9 @@ $categories = get_categories( $args );
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory')?>/public/js/main.js"></script>
-
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?php bloginfo('template_directory'); ?>/public/js/bootstrap.min.js"></script>
+<?php the_field('google',5)?>
+<?php the_field('yandex',5)?>
 </body>
 </html>
