@@ -6,7 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="<?=get_field('logo',5)?>" type="image/png">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Natural World</title>
+	<?php $current_object=get_queried_object(); $field=get_option($current_object->taxonomy.'_'.$current_object->term_taxonomy_id) ?>
+	<title>Natural World | <?php
+		if (is_tax()||is_category()){
+			$_title=$field['meta-title'];
+			if ($_title){
+				echo $_title;
+			} else{
+				if (get_field('meta-title')){
+					the_field('meta-title');
+				}else{
+					wp_title();}
+			}
+		}else{
+			if (get_field('meta-title')){
+				the_field('meta-title');
+			}else{
+				the_title();}
+		}?>
+	</title>
+	<meta name="description" content="<?php if (is_tax()){ echo $field['meta-description'];}else{ the_field('meta-description');}?>"/>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
 	<!-- Bootstrap -->
